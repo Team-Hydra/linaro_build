@@ -76,10 +76,8 @@ PRODUCT_PACKAGES += \
 # linaro dependencies
 PRODUCT_PACKAGES += \
     busybox \
-    ffmpeg \
     lrzsz \
-    wpa_supplicant.conf \
-    x264
+    wpa_supplicant.conf
 
 # host-only dependencies
 ifeq ($(WITH_HOST_DALVIK),true)
