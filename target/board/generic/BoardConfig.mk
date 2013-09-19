@@ -19,7 +19,7 @@ TARGET_ARCH := arm
 # that are slower to emulate. On the other hand, it is possible to emulate
 # application code generated with the NDK that uses NEON in the emulator.
 #
-TARGET_ARCH_VARIANT := armv7-a
+TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -43,4 +43,6 @@ BUILD_EMULATOR_OPENGL := true
 
 # Build and enable the OpenGL ES View renderer. When running on the emulator,
 # the GLES renderer disables itself if host GL acceleration isn't available.
+
 USE_OPENGL_RENDERER := true
+BUILD_KERNEL_MODULES := false
